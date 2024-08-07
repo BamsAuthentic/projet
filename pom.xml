@@ -12,6 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <sonar.host.url>http://localhost:9000</sonar.host.url>
   </properties>
 
   <repositories>
@@ -40,6 +41,11 @@
         <source>17</source> <!-- Utilisez 1.8 pour Java 8, ou 1.7 pour Java 7 -->
         <target>17</target>
       </configuration>
+    </plugin>
+    <plugin>
+      <groupId>org.sonarsource.scanner.maven</groupId>
+      <artifactId>sonar-maven-plugin</artifactId>
+      <version>3.9.0.2155</version> <!-- Utilisez une version fixe -->
     </plugin>
   </plugins>
 </build>
